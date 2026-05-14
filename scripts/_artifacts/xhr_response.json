@@ -1,0 +1,20 @@
+[
+  {
+    "vcCard": "INTER PLUG CCT S.C. | CREDITOS CARNET",
+    "vcCardType": "TITULAR",
+    "vcCardStatus": "ACTIVA",
+    "biAccount": 2684148,
+    "vcNames": "",
+    "vcFirstLastName": "",
+    "vcSecondLastName": "",
+    "vcBranch": "",
+    "vcEmployee": "6f9ade8e6e674aa0b42f32ae73e115b2",
+    "vcRFC": "",
+    "vcCURP": "",
+    "vcNSS": "",
+    "dtBirth": "1900/01/01",
+    "decBalance": 3.6,
+    "dtAprovisionamiento": "2025-12-08 16:33:27",
+    "vcNote": "Aprovisionamiento inicial"
+  }
+]

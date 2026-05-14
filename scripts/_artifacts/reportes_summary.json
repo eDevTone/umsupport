@@ -1,0 +1,45 @@
+{
+  "title": "View_Reports - One Card",
+  "forms": [
+    {
+      "action": "/Extranet/Integrador/Account/LogOff",
+      "method": "post",
+      "id": "logoutForm",
+      "inputs": [
+        {
+          "tag": "input",
+          "type": "hidden",
+          "name": "__RequestVerificationToken",
+          "id": "",
+          "placeholder": null,
+          "options": null
+        }
+      ],
+      "buttons": []
+    }
+  ],
+  "headings": [],
+  "tables": [],
+  "buttons_outside_forms": [
+    {
+      "text": "×",
+      "id": "",
+      "classes": "close"
+    },
+    {
+      "text": "Cerrar",
+      "id": "",
+      "classes": "btn btn-danger"
+    },
+    {
+      "text": "OK",
+      "id": "",
+      "classes": "swal2-confirm"
+    },
+    {
+      "text": "Cancel",
+      "id": "",
+      "classes": "swal2-cancel"
+    }
+  ]
+}

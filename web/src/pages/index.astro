@@ -1,0 +1,10 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Chat from "../components/Chat";
+---
+
+<Layout title="UMSupport · Scraper Chat">
+    <main class="container mx-auto px-4 py-6">
+        <Chat client:load />
+    </main>
+</Layout>

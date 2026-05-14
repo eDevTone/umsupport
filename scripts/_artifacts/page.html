@@ -1,0 +1,306 @@
+<!DOCTYPE html><html><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenido - One Card</title>
+    <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAB/klEQVR4AaSSv2vTQRjGP+/FGJxc/Atci4hQBEsFV6vGNgEHQXBw0q01OuiQSdAmRRR00aFiECH1R9XiplQnQQoO6mRFB8VFKV1Skzufu69NE0qh0Jf3uXvv/fG87x3n2KI4Ks0RJh495fzMkU1xVauOiZlTyp/lQnPQEeyoCotgz0U0JwyzkYyr2fKeN5jdU90xvA07PJ2UH9J6WOs8448bXGwOyIbqq21UnhwU8TPMvQAbIstFe8fJGTBIIInhwkna7kMaden3ACHcVzxOGovoigNp97hmhGTOE3KvVXhcBOrOA3mziIxVzQiiO2LVCz9EfQs6Q3LtFs5p3L/aXwqINIOPEwRvyYHE/gN26W0aYPuEJaIERnH2MeXGZhFm5jAXxA6xODpJkteaJ0eL2ECHFO/4lZQbzwnmnfZp4WsKRBIduqoRu3ZsY5ZlpNUWyOVmHfWx97j2AXWoKXk5EcnYQAvy/yKES6wUDnG1+C1OAJMnflIrVXDsF+4oKbs3IYvLId0hvJVrkHr5CjdHUk5vAlwrfcL7OoQbmM1hrq132K5CMPQu7jNTo9/pkX6CGAi2F+yyxvR0XAPvWkQJogjtQjR7sZ7A5d+p+C5Ov2/nwhfdtaKC01i4jc8tyu7T9QS14iJT5TNMlh9SrXrdtUW9NE2tfJbrY3/6qoF/AAAA///kiwEVAAAABklEQVQDAAchoyHbeYB0AAAAAElFTkSuQmCC" type="image/png">
+    <link href="/Extranet/Integrador/Content/css?v=NWfEbTDN6WVMT4VwPqPbrXHGtLuM5-tCAiPv7Naepgs1&amp;cacheControl=2026051401" rel="stylesheet">
+    
+    <style>
+        #loginForm {
+            background: #fff;
+            padding: 25px;
+            overflow: auto;
+            max-width: 960px;
+        }
+
+        h2 {
+            margin: 0px 0px 35px 0;
+        }
+
+        #frm-login label i {
+            font-size: 32px;
+        }
+
+        #frm-login input[type="text"],
+        #frm-login input[type="password"] {
+            background: transparent;
+            border: 0;
+            border-bottom: 2px solid #0072ab;
+            border-radius: 0;
+            color: #1C4C65;
+            display: inline-block;
+            font-size: 18px;
+            outline: none;
+            padding: 5px 25px;
+            transition: all .1s ease-in-out;
+            width: 100%;
+        }
+
+            #frm-login input[type="text"]:focus,
+            #frm-login input[type="password"]:focus {
+                border-top: 2px solid #00AEF0;
+                border-right: 2px solid #00AEF0;
+                border-bottom: 2px solid #00AEF0;
+                border-left: 2px solid #00AEF0;
+                background-color: #337AB7;
+                color: #FFF;
+            }
+
+        .aviso {
+            background: #FAFFBD;
+            border: 1px solid #C0A519;
+            color: #676767;
+            padding: 8px 15px;
+        }
+
+        .btn-log {
+            background: #DEDEDE;
+            color: #0073AD;
+        }
+    </style>
+
+    <link href="/Extranet/Integrador/bundles/modernizr?v=inCVuEFe6J4Q07A0AcRsbJic_UE5MwpRMNGcOtk94TE1&amp;cacheControl=2026051401" rel="stylesheet">
+</head>
+<body>
+    
+    <!-- Notificaciones -->
+    <div class="modal fade" id="modal-notificaciones" tabindex="-1" data-bs-keyboard="true" aria-labelledby="modal-notificaciones">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body"></div>
+            </div>
+        </div>
+    </div>
+<div id="avisoPrivacidad" class="modal fade bs-example-modal-lg">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                <h4 class="modal-title">AVISO DE PRIVACIDAD</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    <b>OCSI SOLUCIONES SA DE CV</b>, con domicilio en Paseo María Elena 1145, Col. Ampliación Valle del Mirador, San Pedro Garza García, N.L., México, C.P.66260, es el responsable del uso y protección de sus datos personales, y al respecto le informamos lo siguiente:
+                    ¿Para qué fines utilizaremos sus datos personales?<br>
+                    Los datos personales que recabamos de usted, los utilizaremos para las siguientes finalidades que son necesarias para el servicio que le proporcionamos:
+                    Verificar y confirmar su identidad en cualquier relación jurídico o de negocios.<br>
+                    Administrar, operar y correcto funcionamiento de los servicios y productos de medios de pago de los que usted es beneficiario.
+                    Cumplir con los lineamientos y disposiciones de las autoridades que nos regulan.<br>
+                    Fines estadísticos para mejorar nuestros productos y servicios actuales y futuros.<br>
+                    Atención a dudas, comentarios y quejas que realice
+                    Para fines mercadotécnicos, publicitarios, promocionales, telemarketing o de prospección comercial.<br>
+                    ¿Qué datos personales recabamos y utilizamos sobre usted?
+                    Para llevar a cabo las finalidades descritas en el presente aviso de privacidad, utilizaremos sus datos de identificación, datos de contacto, y datos laborales. Estos datos pueden ser recabados de distintas formas: cuando usted nos los proporciona directamente; cuando visita nuestro sitio de Internet o utiliza nuestros servicios en línea, incluyendo la autenticación de datos; y cuando obtenemos información a través de otras fuentes que están permitidas por la Ley Federal de Datos Personales en Posesión de los Particulares (en adelante la Ley).<br>
+                    ¿Qué datos personales sensibles utilizaremos?
+                    Así mismo, le informamos que nuestra empresa no trata datos personales sensibles.<br>
+                    ¿Con quién compartimos su información y para qué fines?
+                    Sus datos personales pueden ser transferidos y tratados dentro y fuera del país, por personas distintas a esta empresa, para (a) cumplir con las disposiciones legales vigentes; (b) en acatamiento a mandamiento u orden judicial; y (c) siempre que sea necesario para la operación y funcionamiento de la Organización. En ese sentido, su información puede ser compartida con nuestras empresas filiales o subsidiarias. En caso de transferencia de los datos personales, esta siempre se llevará a cabo a través de figuras e instrumentos legales que brinden el nivel de protección y medidas de seguridad adecuados para dichos datos. En caso de que no se obtenga del Cliente y/o de los tarjetahabientes (trabajadores) beneficiarios o consumidores finales su oposición expresa enviando un correo a la dirección electrónica para que sus datos personales sean tratados y transferidos en la forma y términos antes descritos, se entenderá que han otorgado su consentimiento para ello.<br>
+                    ¿Cómo puede ejercer sus Derechos ARCO, revocar su consentimiento, o limitar el uso o divulgación de sus datos personales?
+                    Usted tiene derecho a conocer qué datos personales tenemos de usted, para qué los utilizamos y las condiciones del uso que les damos (Acceso). Asimismo, es su derecho solicitar la corrección de su información personal en caso de que esté desactualizada, sea inexacta o incompleta (Rectificación); que la eliminemos de nuestros registros o bases de datos cuando considere que la misma no está siendo utilizada conforme a los principios, deberes y obligaciones previstas en la normativa (Cancelación); así como oponerse al uso de sus datos personales para fines específicos (Oposición). Estos derechos se conocen como derechos ARCO.
+                    Usted puede revocar el consentimiento que, en su caso, nos haya otorgado para el tratamiento de sus datos personales. Sin embargo, es importante que tenga en cuenta que no en todos los casos podremos atender su solicitud o concluir el uso de forma inmediata, ya que es posible que por alguna obligación legal requiramos seguir tratando sus datos personales. Asimismo, usted deberá considerar que para ciertos fines, la revocación de su consentimiento implicará que no le podamos seguir prestando el servicio que nos solicitó, o la conclusión de su relación con nosotros.
+                    Usted pueda limitar el uso y divulgación de su información personal mediante su inscripción en el Registro Público para Evitar Publicidad, que está a cargo de la Procuraduría Federal del Consumidor, con la finalidad de que sus datos personales no sean utilizados para recibir publicidad o promociones de empresas de bienes o servicios. Para mayor información sobre este registro, usted puede consultar el portal de Internet de la PROFECO, o bien ponerse en contacto directo con ésta.
+                    Para el ejercicio de cualquiera de los derechos ARCO, revocar su consentimiento o limitar el uso y divulgación de su información personal, usted deberá mandar un correo a serviciocliente@onecard.mx con el título “Derechos ARCO” y deberá contener cuando menos lo siguiente:
+                    Nombre del Titular de los Datos Personales;
+                    Domicilio, teléfono y correo electrónico para recibir comunicaciones
+                    Documentos que acrediten su identidad. En caso de ser Representante Legal, el instrumento del que se desprendan sus facultades de representación;
+                    Descripción clara y precisa de los datos personales respecto de los que se busca ejercer los derechos;
+                    Descripción clara y preciso del derecho que busca ejercer;
+                    Cualquier otro elemento o documento que facilite la localización de los datos personales, así como cualquier otro elemento que, de conformidad con la legislación y al último Aviso de Privacidad que se encuentren vigentes al momento de la presentación de su solicitud.
+                    El uso de tecnologías de rastreo en nuestro portal de Internet
+                    Le informamos que en nuestra página de Internet utilizamos cookies para brindarle un mejor servicio y experiencia de usuario al navegar en nuestra página. Las Cookies son identificadores que nuestro servidor le puede enviar a su computadora para identificar el equipo que ha sido utilizado durante la sesión. La mayoría de exploradores de Internet están diseñados para aceptar estas Cookies automáticamente. Adicionalmente, usted podrá desactivar el almacenamiento de Cookies o ajustar su explorador de Internet para que le sea informado antes que las Cookies se almacenen en su computadora. Las Cookies pueden ser depuradas por usted de forma manual en cuanto usted lo decida.
+                    Sus datos personales se podrán transferir a terceros para (a) cumplir con las disposiciones legales vigentes; (b) en acatamiento a mandamiento u orden judicial; y (c) siempre que sea necesario para la operación y funcionamiento de la Organización. En caso de transferencia de los datos personales, esta siempre se llevará a cabo a través de figuras e instrumentos legales que brinden el nivel de protección y medidas de seguridad adecuados para dichos datos.
+                    ¿Cómo puede conocer los cambios a este aviso de privacidad?
+                    El presente aviso de privacidad puede sufrir modificaciones, cambios o actualizaciones derivadas de nuevos requerimientos legales; de nuestras propias necesidades por los productos o servicios que ofrecemos; de nuestras prácticas de privacidad; de cambios en nuestro modelo de negocio, o por otras causas.
+                    Estas modificaciones se anunciarán y estarán disponibles al público a través de nuestra página de internet www.ocsi.mx, sección “Aviso de Privacidad”
+                    ¿Ante quién puede presentar sus quejas y denuncias por el tratamiento indebido de sus datos personales?
+                    Si usted considera que su derecho de protección de datos personales ha sido lesionado por alguna conducta de nuestros empleados o de nuestras actuaciones o respuestas, presume que en el tratamientos de sus datos personales existe alguna violación a las disposiciones previstas en la Ley Federal de Protección de Datos Personales en Posesión de los Particulares, podrá interponer la queja o denuncia correspondiente ante el IFAI, para mayor información visite www.ifai.org.mx
+                    Última actualización 23 de Marzo de 2014. ehlc
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+    <nav id="top-navbar" class="navbar navbar-onecard navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+            <div class="mask pseudo">
+                <a href="/Extranet/Integrador/">
+                    <img src="/Extranet/Integrador/Images/navbar-icon.png" alt="ONECARD">
+                </a>
+                
+            </div>
+                <svg height="0" class="hide">
+                    <!-- THE mask -->
+                    <mask id="mask-firefox">
+                        <image width="164" height="40" xlink:href="/Extranet/Integrador/Images/navbar-icon.png" filter="url(#filter)"></image>
+                    </mask>
+                </svg>
+            </div>
+            <div id="toggleBtnH" class="_hide float-left">
+                <a href="#" class="btn "><i class="glyphicon glyphicon-eye-open"></i> Ver Menu</a>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <div class="row">
+        <div id="main" class="col-sm-11 col-sm-offset-1 col-md-11 col-md-offset-1 main">
+            
+            
+
+<section id="loginForm" class="section" style="margin-top:50px">
+<form id="frm-login" action="/Extranet/Integrador/Account/Login?ReturnUrl=%2FExtranet%2FIntegrador%2F" autocomplete="off" class="form-horizontal" method="post" role="form" novalidate="novalidate">        <div id="ip" style="display:none">            
+            <input type="hidden" class="ip" name="IP" id="IP" value="" style="">
+        </div>
+<input name="__RequestVerificationToken" type="hidden" value="VgJAtHHJxO1rDMvk8rGu5-Pw1RUHhDWdIOJEJTjLhr2b8smGvoHkjhifK8XSCorBlYb5RdEUkobIknskPDAgSgLnuCOMrWXDdPq9aO07MwQ1" style="">        <input style="display: none;" type="text" name="bugAutocompleteChomre">
+        <input style="display: none;" type="password" name="bugAutocompleteChomre">
+        <h2>Ingresar</h2>
+        <div class="row">
+            <div class="col-md-8">
+                <div class="form-group">
+                    <div class="col-md-2">
+                        <img src="/Extranet/Integrador/Images/user.png" alt="usuario">
+                    </div>
+                    <div class="col-md-10">
+                        <input data-val="true" data-val-email="The Correo field is not a valid e-mail address." data-val-required="El campo correo es obligatorio." id="Email" name="Email" placeholder="Correo" type="text" value="" style="">
+                        <span class="field-validation-valid error-valid" data-valmsg-for="Email" data-valmsg-replace="true"></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-2">
+                        <img src="/Extranet/Integrador/Images/pass.png" alt="password">
+                    </div>
+                    <div class="col-md-10">
+                        <input data-val="true" data-val-required="El campo contraseña es obligatorio." id="Password" name="Password" placeholder="Contraseña" type="password" style="">
+                        <span class="field-validation-valid error-valid" data-valmsg-for="Password" data-valmsg-replace="true"></span>
+                    </div>
+                </div>
+
+                <div class="form-group text-center">
+                    <div class="col-md-12">
+                        
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <input type="submit" value="ENTRAR" class="btn btn-primary" style="">
+                        <a href="/Extranet/Integrador/Account/ForgotPassword" class="btn btn-default">Olvide mi contraseña?</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+</form></section>
+
+        </div>
+        </div>
+    </div>
+    <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-677MNF5QX5&amp;cx=c&amp;gtm=4e65c1"></script><script src="/Extranet/Integrador/bundles/jquery?v=PMTAzy-KMSGp124r1ahKyF4RfG6i8SOIYfc-CWxIPns1&amp;cacheControl=2026051401"></script>
+    <script src="/Extranet/Integrador/bundles/bootstrap?v=RSckpl60zey9IT0XGAn3KkW30wI_NMKnLK_JsdNb5Jo1&amp;cacheControl=2026051401"></script>
+    <script src="/Extranet/Integrador/bundles/vendor?v=hMWJExz3JMUiF4hY7sh9ryHcq6wfQjjA8XsaNSaerps1&amp;cacheControl=2026051401"></script>
+    <script>
+        var Server = "https://www.onecardservicios.mx/Extranet/Integrador/";
+        var IsAuthenticated = 0;
+        var ValidSession = "/Extranet/Integrador/Session/ValidSession";
+        var View = "Account;";
+        var XW_rABS = '/Extranet/Integrador/Scripts/js-xlsx/xlsxworker2.js';
+        var XW_norABS = '/Extranet/Integrador/Scripts/js-xlsx/xlsxworker1.js';
+        var XW_noxfer = '/Extranet/Integrador/Scripts/js-xlsx/xlsxworker.js';
+        var Notificacion = '/Extranet/Integrador/Home/Notificacion';
+        var GetPopUpList = '/Extranet/Integrador/Home/GetPopUpList';
+        var GetNotifications = '/Extranet/Integrador/Home/GetNotifications';
+        var SetPopUpRead = '/Extranet/Integrador/Home/SetPopUpRead';
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-143580011-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-143580011-2');
+
+    </script>
+    <!-- FIN ANALITYCS -->
+
+    <script src="/Extranet/Integrador/bundles/main?v=2ou1rr3ICUhrifFPhNfMrmV8MMv8VJibRvKeHiVLKtM1&amp;cacheControl=2026051401"></script>
+    
+    <script src="/Extranet/Integrador/bundles/jqueryval?v=ovWrbyZglhDW9_8-LOmyINGBf96K0Ryav8EiQicAFPg1"></script>
+
+
+    <script>
+        var $ip = $("#ip").text();
+        $(function () {
+            if (typeof localStorage.correo !== "undefined") {
+                $("#Email").val(localStorage.correo);
+            }
+            $("#IP").val($ip.trim());
+        });
+    </script>
+
+    <script>
+        var errorMsj = "";
+        if (errorMsj) {
+            alert(errorMsj);
+        }
+        var menuSource = $.map($("#menu li>a"), function(e, i){
+            $this = $(e);
+            if($this.text() !== ""){
+                return {
+                    "id": i,
+                    "nombre": String($this.text()).toLowerCase(),
+                    "href": $this.attr("href")
+                };
+            }
+        });
+        $(function () {
+            var $iBuscar = $('#iBuscar');
+            var source = [];
+            $("#menu a").each(function (i, item) {
+                source.push({
+                    id: i,
+                    name: $(item).text(),
+                    url: $(item).prop("href"),
+                    type: $(item).data("type"),
+                    action: $(item).data("action")
+                });
+            });
+            $iBuscar.typeahead({
+                displayText: function(item){ return item.nombre;},
+                source: $.map($("#menu li>a"), function(e, i){
+                    $this = $(e);
+                    if($this.text() !== ""){
+                        return {
+                            "id": i,
+                            "nombre": $this.text(),
+                            "href": $this.attr("href"),
+                            "type": "url"
+                        };
+                    }
+                }),
+                afterSelect: function (selected) {
+                    switch (selected.type) {
+                        case 'url':
+                            loading(true);
+                            window.location = selected.href;
+                            break;
+                        case 'action':
+                            switch (selected.action) {
+                                case 'logout':
+                                    document.getElementById('logoutForm').submit();
+                                    break;
+                            }
+                            break;
+                    }
+                }
+            });
+        });
+    </script>
+
+
+
+
+
+<div class="swal2-container"><div class="swal2-overlay" tabindex="-1"></div><div class="swal2-modal" style="display: none" tabindex="-1"><div class="swal2-icon swal2-error"><span class="x-mark"><span class="line left"></span><span class="line right"></span></span></div><div class="swal2-icon swal2-question">?</div><div class="swal2-icon swal2-warning">!</div><div class="swal2-icon swal2-info">i</div><div class="swal2-icon swal2-success"><span class="line tip"></span> <span class="line long"></span><div class="placeholder"></div> <div class="fix"></div></div><img class="swal2-image"><h2></h2><div class="swal2-content"></div><input class="swal2-input" style=""><select class="swal2-select"></select><div class="swal2-radio"></div><label for="swal2-checkbox" class="swal2-checkbox"><input type="checkbox" id="swal2-checkbox" style=""></label><textarea class="swal2-textarea" style=""></textarea><div class="swal2-validationerror"></div><hr class="swal2-spacer"><button class="swal2-confirm">OK</button><button class="swal2-cancel">Cancel</button><span class="swal2-close">×</span></div></div></body></html>

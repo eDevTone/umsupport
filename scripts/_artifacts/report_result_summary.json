@@ -1,0 +1,39 @@
+{
+  "title": "Reporte Empleados - One Card",
+  "url": "https://www.onecardservicios.mx/Extranet/Integrador/Reports/ReportEmployees?iType=2",
+  "tables": [
+    {
+      "id": "tbGetInfoEmployees2",
+      "classes": "table-oc table-xhr table table-hover",
+      "headers": [
+        "Convenio Producto",
+        "Tipo",
+        "Estatus",
+        "Cuenta",
+        "Nombre(s)",
+        "Apellido Paterno",
+        "Apellido Materno",
+        "Sucursal",
+        "Empleado",
+        "RFC",
+        "CURP",
+        "NSS",
+        "Fecha Nacimiento",
+        "Saldo"
+      ],
+      "firstRow": [
+        "No se encontraron registros"
+      ],
+      "rowCount": 1
+    }
+  ],
+  "labels": [
+    "REPORTE CUENTA MAESTRA",
+    "REPORTE EMPLEADOS",
+    "REPORTE EMPLEADO TARJETA",
+    "REPORTE MOVIMIENTOS",
+    "REPORTE RECARGA MANUAL",
+    "*Tarjeta:"
+  ],
+  "body_text_preview": "0 REPORTE CUENTA MAESTRA REPORTE EMPLEADOS REPORTE EMPLEADO TARJETA REPORTE MOVIMIENTOS REPORTE RECARGA MANUAL Reporte Empleados *Tarjeta: Cargando, espere por favor... Convenio Producto Tipo Estatus Cuenta Nombre(s) Apellido Paterno Apellido Materno Sucursal Empleado RFC CURP NSS Fecha Nacimiento Saldo No se encontraron registros XLS"
+}

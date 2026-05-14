@@ -1,0 +1,142 @@
+[
+  {
+    "tag": "button",
+    "text": "×",
+    "href": null,
+    "title": null,
+    "aria_label": "Close",
+    "data_target": null,
+    "classes": "close",
+    "id": null
+  },
+  {
+    "tag": "button",
+    "text": "Cerrar",
+    "href": null,
+    "title": null,
+    "aria_label": null,
+    "data_target": null,
+    "classes": "btn btn-danger",
+    "id": null
+  },
+  {
+    "tag": "a",
+    "text": "",
+    "href": "/Extranet/Integrador/",
+    "title": null,
+    "aria_label": null,
+    "data_target": null,
+    "classes": null,
+    "id": null
+  },
+  {
+    "tag": "a",
+    "text": "",
+    "href": "/Extranet/Integrador/Manage",
+    "title": null,
+    "aria_label": null,
+    "data_target": null,
+    "classes": null,
+    "id": null
+  },
+  {
+    "tag": "a",
+    "text": "0",
+    "href": "#Notificaciones",
+    "title": null,
+    "aria_label": null,
+    "data_target": null,
+    "classes": null,
+    "id": "btn-notificaciones"
+  },
+  {
+    "tag": "a",
+    "text": "",
+    "href": "/Extranet/Integrador/Creditos/Cliente",
+    "title": null,
+    "aria_label": null,
+    "data_target": null,
+    "classes": null,
+    "id": null
+  },
+  {
+    "tag": "a",
+    "text": "",
+    "href": "/Extranet/Integrador/Home/Tarjetas",
+    "title": null,
+    "aria_label": null,
+    "data_target": null,
+    "classes": null,
+    "id": null
+  },
+  {
+    "tag": "a",
+    "text": "",
+    "href": "/Extranet/Integrador/Home/Reportes?iType=1",
+    "title": null,
+    "aria_label": null,
+    "data_target": null,
+    "classes": null,
+    "id": null
+  },
+  {
+    "tag": "a",
+    "text": "",
+    "href": "/Extranet/Integrador/Tickets/Ticket/ReportTickets",
+    "title": null,
+    "aria_label": null,
+    "data_target": null,
+    "classes": null,
+    "id": null
+  },
+  {
+    "tag": "a",
+    "text": "",
+    "href": "/Extranet/Integrador/Home/Configuracion",
+    "title": null,
+    "aria_label": null,
+    "data_target": null,
+    "classes": null,
+    "id": null
+  },
+  {
+    "tag": "a",
+    "text": "",
+    "href": "/Extranet/Integrador/Paychamp/Index",
+    "title": null,
+    "aria_label": null,
+    "data_target": null,
+    "classes": null,
+    "id": null
+  },
+  {
+    "tag": "a",
+    "text": "",
+    "href": "javascript:document.getElementById('logoutForm').submit()",
+    "title": null,
+    "aria_label": null,
+    "data_target": null,
+    "classes": null,
+    "id": null
+  },
+  {
+    "tag": "button",
+    "text": "OK",
+    "href": null,
+    "title": null,
+    "aria_label": null,
+    "data_target": null,
+    "classes": "swal2-confirm",
+    "id": null
+  },
+  {
+    "tag": "button",
+    "text": "Cancel",
+    "href": null,
+    "title": null,
+    "aria_label": null,
+    "data_target": null,
+    "classes": "swal2-cancel",
+    "id": null
+  }
+]

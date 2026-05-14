@@ -1,0 +1,86 @@
+{
+  "title": "Reporte Empleados - One Card",
+  "forms": [
+    {
+      "action": "/Extranet/Integrador/Account/LogOff",
+      "method": "post",
+      "id": "logoutForm",
+      "inputs": [
+        {
+          "tag": "input",
+          "type": "hidden",
+          "name": "__RequestVerificationToken",
+          "id": "",
+          "placeholder": null,
+          "visible": false,
+          "options": null
+        }
+      ],
+      "buttons": []
+    },
+    {
+      "action": "/Extranet/Integrador/Reports/ReportEmployees/GetInfoEmployees2",
+      "method": "post",
+      "id": "frm-GetInfoEmployees2",
+      "inputs": [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "biCard",
+          "id": "biCard",
+          "placeholder": "Ingresar Tarjeta",
+          "visible": true,
+          "options": null
+        },
+        {
+          "tag": "input",
+          "type": "submit",
+          "name": null,
+          "id": "",
+          "placeholder": null,
+          "visible": true,
+          "options": null
+        }
+      ],
+      "buttons": [
+        {
+          "tag": "input",
+          "type": "submit",
+          "id": "",
+          "text": "Ver"
+        }
+      ]
+    }
+  ],
+  "visible_inputs": [
+    {
+      "tag": "input",
+      "type": "text",
+      "name": "biCard",
+      "id": "biCard",
+      "placeholder": "Ingresar Tarjeta"
+    },
+    {
+      "tag": "input",
+      "type": "submit",
+      "name": null,
+      "id": "",
+      "placeholder": null
+    }
+  ],
+  "headings": [
+    "REPORTE CUENTA MAESTRA",
+    "REPORTE EMPLEADOS",
+    "REPORTE EMPLEADO TARJETA",
+    "REPORTE MOVIMIENTOS",
+    "REPORTE RECARGA MANUAL",
+    "Reporte Empleados",
+    "*Tarjeta:"
+  ],
+  "visible_buttons": [
+    {
+      "id": null,
+      "text": "Ver"
+    }
+  ]
+}

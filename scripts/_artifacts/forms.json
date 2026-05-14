@@ -1,0 +1,75 @@
+[
+  {
+    "action": "/Extranet/Integrador/Account/Login?ReturnUrl=%2FExtranet%2FIntegrador%2F",
+    "method": "post",
+    "id": "frm-login",
+    "name": null,
+    "inputs": [
+      {
+        "tag": "input",
+        "type": "hidden",
+        "name": "IP",
+        "id": "IP",
+        "placeholder": null,
+        "autocomplete": null
+      },
+      {
+        "tag": "input",
+        "type": "hidden",
+        "name": "__RequestVerificationToken",
+        "id": "",
+        "placeholder": null,
+        "autocomplete": null
+      },
+      {
+        "tag": "input",
+        "type": "text",
+        "name": "bugAutocompleteChomre",
+        "id": "",
+        "placeholder": null,
+        "autocomplete": null
+      },
+      {
+        "tag": "input",
+        "type": "password",
+        "name": "bugAutocompleteChomre",
+        "id": "",
+        "placeholder": null,
+        "autocomplete": null
+      },
+      {
+        "tag": "input",
+        "type": "text",
+        "name": "Email",
+        "id": "Email",
+        "placeholder": "Correo",
+        "autocomplete": null
+      },
+      {
+        "tag": "input",
+        "type": "password",
+        "name": "Password",
+        "id": "Password",
+        "placeholder": "Contraseña",
+        "autocomplete": null
+      },
+      {
+        "tag": "input",
+        "type": "submit",
+        "name": null,
+        "id": "",
+        "placeholder": null,
+        "autocomplete": null
+      }
+    ],
+    "buttons": [
+      {
+        "tag": "input",
+        "type": "submit",
+        "name": null,
+        "id": "",
+        "text": "ENTRAR"
+      }
+    ]
+  }
+]
