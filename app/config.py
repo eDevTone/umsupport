@@ -15,6 +15,10 @@ class Settings(BaseSettings):
     SITE_PASS: str = ""
     HEADLESS: bool = True
     ALLOWED_ORIGINS: str = "http://localhost:4321"
+    # Optional regex matched (with fullmatch) against the request Origin header.
+    # Useful for tunnels with dynamic subdomains (devtunnels, ngrok, trycloudflare).
+    # Example: r"https://zdrlvx80-\d+\.usw3\.devtunnels\.ms"
+    ALLOWED_ORIGIN_REGEX: str | None = None
     LOG_LEVEL: str = "INFO"
 
     @property
