@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com/playwright/python:v1.59.0-noble
+FROM mcr.microsoft.com/playwright/python:v1.60.0-noble
 
 ENV PYTHONUNBUFFERED=1 \
     PIP_NO_CACHE_DIR=1 \

@@ -50,7 +50,7 @@ Render builds your service from a Dockerfile that includes Chromium. Create `Doc
 
 ```dockerfile
 # Playwright's official Python image already bundles Chromium + system libs
-FROM mcr.microsoft.com/playwright/python:v1.59.0-noble
+FROM mcr.microsoft.com/playwright/python:v1.60.0-noble
 
 ENV PYTHONUNBUFFERED=1 \
     PIP_NO_CACHE_DIR=1 \
