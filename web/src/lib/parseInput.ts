@@ -1,5 +1,7 @@
 export type ScrapeItem = {
     card: string;
+    /** Portal username of the employee that owns the card. Optional; only needed to build the activation query. */
+    username?: string;
 };
 
 export type ParseLineError = {
@@ -14,13 +16,15 @@ export type ParseResult = {
 };
 
 const CARD_REGEX = /^\d{12,19}$/;
+const FIELD_SEPARATOR = /[,;|\t]/;
 
 /**
- * Parses multi-line text where each line contains a single card number.
- * Empty lines are ignored.
+ * Parses multi-line text where each line contains a card number and,
+ * optionally, the employee username separated by a comma, semicolon, pipe
+ * or tab (`5062990506414370,sha645627@yopmail.com`). Empty lines are ignored.
  *
  * @param raw - Raw text pasted by the user in the textarea.
- * @returns Valid card items and per-line errors with line number and reason.
+ * @returns Valid items and per-line errors with line number and reason.
  */
 export function parseInput(raw: string): ParseResult {
     const items: ScrapeItem[] = [];
@@ -31,7 +35,9 @@ export function parseInput(raw: string): ParseResult {
         const trimmed = line.trim();
         if (!trimmed) return;
 
-        const card = trimmed.replace(/[\s\-]/g, "");
+        const [rawCard = "", rawUser = ""] = trimmed.split(FIELD_SEPARATOR, 2);
+        const card = rawCard.replace(/[\s\-]/g, "");
+        const username = rawUser.trim();
 
         if (!CARD_REGEX.test(card)) {
             errors.push({
@@ -42,7 +48,7 @@ export function parseInput(raw: string): ParseResult {
             return;
         }
 
-        items.push({ card });
+        items.push(username ? { card, username } : { card });
     });
 
     return { items, errors };

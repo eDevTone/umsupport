@@ -32,7 +32,7 @@ export async function scrapeStream(
     const response = await fetch(`${API_URL}/api/scrape/stream`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ items }),
+        body: JSON.stringify({ items: items.map(({ card }) => ({ card })) }),
         signal,
     });
 
